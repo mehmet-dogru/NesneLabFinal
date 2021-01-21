@@ -10,12 +10,24 @@ namespace MonitorApp.Business.Concrete
 {
     public class MonitorManager : IMonitorService
     {
+        public int KayitSayisi { 
+            get 
+            {
+                return _monitorDal.GetAll().Count;
+            } 
+            set 
+            {
+            } 
+        }
+
+
         private IMonitorDal _monitorDal;
+
         public MonitorManager(IMonitorDal monitorDal)
         {
             _monitorDal = monitorDal;
         }
-
+        
         public void Add(Monitor monitor)
         {
             _monitorDal.Add(monitor);

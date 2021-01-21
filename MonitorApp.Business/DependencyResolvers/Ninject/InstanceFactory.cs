@@ -11,5 +11,6 @@ namespace MonitorApp.Business.DependencyResolvers.Ninject
         {
             return new StandardKernel(new BusinessModule()).Get<T>();
         }
+        
     }
 }

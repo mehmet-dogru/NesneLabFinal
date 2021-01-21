@@ -18,6 +18,7 @@ namespace MonitorApp.Entites.Concrete
         {
 
         }
+       
         public int Id { get; set; }
         public string Model { get; set; }
         public decimal Fiyat { get; set; }

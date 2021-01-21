@@ -15,5 +15,7 @@ namespace MonitorApp.DataAccess.Concrete.EntityFramework
                .UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=MonitorDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
         public DbSet<Monitor> Monitors { get; set; }
+        public DbSet<Post> Posts { get; set; }
+
     }
 }
